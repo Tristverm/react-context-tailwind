@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState } from "react";
 
 //creating a theme context
 
@@ -13,7 +13,9 @@ function ThemeProvider({ children }) {
   }
   return (
     <>
-      <themeContext.Provider value={{ darkMode, switchTheme: themeSwitchHandler }}>
+      <themeContext.Provider
+        value={{ darkMode, switchTheme: themeSwitchHandler }}
+      >
         {children}
       </themeContext.Provider>
     </>
@@ -21,3 +23,4 @@ function ThemeProvider({ children }) {
 }
 
 export default ThemeProvider;
+export { themeContext };
