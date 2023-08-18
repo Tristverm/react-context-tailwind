@@ -5,15 +5,17 @@ import React, { createContext, useState, useContext } from "react";
 let themeContext = createContext();
 
 function ThemeProvider({ children }) {
-  let [theme, setTheme] = useState("light");
+  let [darkMode, setDarkMode] = useState(false);
   function themeSwitchHandler() {
-    setTheme((prevTheme) => {
-      return !prevTheme;
+    setDarkMode((darkMode) => {
+      return !darkMode;
     });
   }
   return (
     <>
-      <themeContext.Provider>{children}</themeContext.Provider>
+      <themeContext.Provider value={{ darkMode, switchTheme: themeSwitchHandler }}>
+        {children}
+      </themeContext.Provider>
     </>
   );
 }
