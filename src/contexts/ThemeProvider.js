@@ -6,9 +6,14 @@ let themeContext = createContext();
 
 function ThemeProvider({ children }) {
   let [theme, setTheme] = useState("light");
+  function themeSwitchHandler() {
+    setTheme((prevTheme) => {
+      return !prevTheme;
+    });
+  }
   return (
     <>
-      <themeContext.Provider></themeContext.Provider>
+      <themeContext.Provider>{children}</themeContext.Provider>
     </>
   );
 }
