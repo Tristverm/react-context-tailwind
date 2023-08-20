@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import ThemeProvider from "./contexts/ThemeProvider";
 import Header from "./components/Header";
