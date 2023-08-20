@@ -13,9 +13,9 @@ function Header() {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-xl font-semibold">Theme Toggle App</h1>
         <button
-          onClick={toggleTheme}
+          onClick={switchTheme}
           className={`p-2 rounded ${
-            darkMode ? "bg-gray-800 text-white" : "bg-white text-gray-800"
+            darkMode ? "bg-gray-800 text-white border-white border-2" : "bg-white text-gray-800"
           }`}
         >
           Toggle Theme
