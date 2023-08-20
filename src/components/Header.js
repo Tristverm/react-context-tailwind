@@ -2,8 +2,7 @@ import { useContext } from "react";
 import React from "react";
 import { themeContext } from "../contexts/ThemeProvider";
 function Header() {
-
-
+  let { darkMode, switchTheme } = useContext(themeContext);
 
   return (
     <header
