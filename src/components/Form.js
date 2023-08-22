@@ -7,21 +7,21 @@ function Form() {
         <legend className="text-bold text-xl text-center ">
           Enter Details
         </legend>
-        <div className="flex flex-row space-x-16 my-8 self-center">
+        <div className="flex flex-row  my-8 ml-4">
           <label>Surname</label>
-          <input />
+          <input className="flex-1 mx-2" />
         </div>
-        <div className="flex flex-row space-x-16 my-8 self-center">
-          <label>Surname</label>
-          <input />
+        <div className="flex flex-row my-8 self-left ml-4">
+          <label>LastName</label>
+          <input className="flex-1 mx-2" />
         </div>
-        <div className="flex flex-row space-x-16 my-8 self-center">
-          <label>Surname</label>
-          <input />
+        <div className="flex flex-row  my-8 self-left ml-4">
+          <label>Other Names</label>
+          <input className="flex-1 mx-2 w-8"  />
         </div>
-        <div className="flex flex-row space-x-16 my-8 self-center">
+        <div className="flex flex-row  my-8 self-left ml-4">
           <label>Surname</label>
-          <input />
+          <input className="flex-1 mx-2" />
         </div>
       </form>
     </div>
